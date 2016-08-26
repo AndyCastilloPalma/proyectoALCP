@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.facci.proyectoalcp.MainActivityALCP"
+    android:background="#812da2"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="ID"
+        android:id="@+id/id" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtID"
+        android:layout_below="@+id/id"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Nombre"
+        android:id="@+id/nombre"
+        android:layout_below="@+id/txtID"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtNombre"
+        android:layout_below="@+id/nombre"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Apellido"
+        android:id="@+id/textView"
+        android:layout_below="@+id/txtNombre"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtApellido"
+        android:layout_below="@+id/textView"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Recinto Electoral"
+        android:id="@+id/recinto"
+        android:layout_below="@+id/txtApellido"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtRecintoElectoral"
+        android:layout_below="@+id/recinto"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Año Nacimiento"
+        android:id="@+id/año"
+        android:layout_below="@+id/txtRecintoElectoral"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtañoNacimiento"
+        android:layout_below="@+id/año"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ingresar"
+        android:id="@+id/btnIngresar"
+        android:onClick="BTNingresar"
+        android:layout_above="@+id/btnBuscar"
+        android:layout_alignEnd="@+id/recinto"
+        android:layout_toEndOf="@+id/id"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Modificar"
+        android:id="@+id/btnModificar"
+        android:onClick="BTNmodificar"
+        android:layout_below="@+id/txtañoNacimiento"
+        android:layout_alignParentEnd="true"
+        android:layout_toEndOf="@+id/btnIngresar" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Eliminar"
+        android:id="@+id/btnEliminar"
+        android:onClick="BTNeliminar"
+        android:layout_alignBottom="@+id/btnBuscar"
+        android:layout_alignStart="@+id/btnIngresar"
+        android:layout_alignEnd="@+id/btnIngresar" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Buscar Todos"
+        android:onClick="BTNbuscar"
+        android:id="@+id/btnBuscar"
+        android:layout_below="@+id/btnModificar"
+        android:layout_alignEnd="@+id/btnModificar"
+        android:layout_toEndOf="@+id/año"
+        android:layout_alignStart="@+id/btnModificar" />
+</RelativeLayout>
